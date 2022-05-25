@@ -7759,8 +7759,8 @@ textarea.form-control-lg {
   background-image: url("../assets/img/backgroundTraegis.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%; 
-
+ /* background-size: 100%; */
+background-size: cover;
 }
 
 .bg-about {
