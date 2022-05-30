@@ -616,6 +616,14 @@ progress {
   height: auto;
 }
 
+.img-fluid11 {
+max-width: 75%;
+    height: auto;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-fluid-sm {
     max-width: 75%;
     height: auto;
@@ -878,6 +886,34 @@ bottom: 0px;
 .col-4 {
   flex: 0 0 auto;
   width: 33.3333333333%;
+}
+
+.col-c8 {
+  flex: 0 0 auto;
+     width: 33.3333333333%;
+
+}
+
+@media(max-width: 992px) {
+.col-c8 {
+  flex: 0 0 auto;
+  width: 56.6666667%;
+}
+}
+
+
+@media (max-width: 1201px) {
+.col-c4 {
+  flex: 0 0 auto;
+  /*width: 25.3333333333%;*/
+}
+}
+
+@media (max-width: 992px) {
+.col-c4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
 }
 
 .col-5 {
@@ -5972,6 +6008,10 @@ textarea.form-control-lg {
   width: 85%;
 }
 
+.carousel-small {
+    width: 70% !important;
+}
+
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -7197,6 +7237,10 @@ textarea.form-control-lg {
   margin-top: 1.5vw !important;
 }
 
+.mt-c4 {
+  margin-top: 2rem !important;
+}
+
 .mt-5 {
   margin-top: 3rem !important;
 }
@@ -7225,6 +7269,16 @@ textarea.form-control-lg {
     margin-top: -2rem !important;
 }
 
+.mt-c7 {
+    margin-top: -2rem !important;
+}
+
+@media (max-width: 992px) {
+    .mt-c7 {
+    margin-top: -1rem !important;
+}
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -7251,6 +7305,10 @@ textarea.form-control-lg {
 
 .me-5 {
   margin-right: 3rem !important;
+}
+
+.me-c1 {
+    margin-right: -1.6rem !important;
 }
 
 .me-auto {
@@ -7348,6 +7406,7 @@ textarea.form-control-lg {
 .ms-4 {
   margin-left: 1.5rem !important;
 }
+
 
 .ms-5 {
   margin-left: 3rem !important;
@@ -7550,8 +7609,30 @@ textarea.form-control-lg {
     font-size: 1.2vw;
 }
 
+@media (max-width: 1200px) {
+.font-size-1 {
+    /*font-size: 1.2rem;*/
+    font-size: 1.2vw;
+}
+}
+
+@media (max-width: 767px) {
+.font-size-1 {
+    /*font-size: 1.2rem;*/
+    font-size: 2.2vw;
+}
+}
+
+
 .font-size-2 {
+    font-size: 2vw;
+}
+
+@media (max-width: 1200px) {
+.font-size-2 {
+    /*font-size: 1.2rem;*/
     font-size: 3vw;
+}
 }
 
 .fs-1 {
@@ -7751,10 +7832,10 @@ textarea.form-control-lg {
   background-image: url("../assets/img/title_OUTLANDIA.png");
   background-position: cover;
 
-  /*background-size: cover; */
+  background-size: cover; 
 
-  background-size: 100%; 
-  background-repeat: no-repeat; 
+  /*background-size: 100%; */
+  /*background-repeat: no-repeat; */
 }
 
 .bg-box {
@@ -7790,6 +7871,14 @@ textarea.form-control-lg {
 
 .bg-static2 {
   background-image: url("../assets/img/backgroundTraegis.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ /* background-size: 100%; */
+background-size: cover;
+}
+
+.bg-static3 {
+  background-image: url("../assets/img/background_Letternumber.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
  /* background-size: 100%; */
@@ -7849,7 +7938,8 @@ background-size: cover;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  /*background-color: #212529 !important;*/
+  background-color:rgba(0, 0, 0, 0.7);
 }
 
 .bg-body {
@@ -9937,7 +10027,7 @@ display: inline-block;
     text-align: center !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .float-xl-start {
     float: left !important;
   }
@@ -11338,6 +11428,10 @@ html {
   border-color: #2c3e50;
 }
 
+.background-color-black {
+  background-color: #000 !important;
+}
+
 .divider-custom-line2 {
     width: 100%;
   max-width: 35rem;
@@ -11358,15 +11452,30 @@ html {
   font-size: 4vw;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #a6a6a6;
 }
 .divider-custom.divider-light .divider-custom-icon {
+  color: #a6a6a6;
+}
+
+}
+.divider-custom.divider-dark .divider-custom-line {
+  background-color: #fff;
+}
+.divider-custom.divider-dark .divider-custom-icon {
   color: #fff;
 }
 
 .btn-xl {
   padding: 1rem 1.75rem;
-  font-size: 1.25rem;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1200px) {
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 2.2vw;
+}
 }
 
 .color-dark {
@@ -11481,13 +11590,35 @@ html {
   top: 0;
   left: 0;
 }
+.image11 {
+  position: relative;
+  /*width: 80rem;*/
+  width: 90%;
+}
+
 .image1 {
   position: relative;
   /*width: 80rem;*/
+  height: 60rem;
   width: 100%;
+  object-fit: cover;
+}
+/*
+@media(max-width: 1201px) {
+.image11 {
+  position: relative;
+  width: 80%;
+}
 }
 
+@media(max-width: 992px) {
+.image11 {
+  position: relative;
+  width: 90%;
+}
+}
 
+*/
 .image1-fluid {
   position: relative;
   /*width: 80rem;*/
@@ -11498,6 +11629,13 @@ html {
 .image2-fluid {
   position: relative;
   width: 6vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.image2-1-fluid {
+  position: relative;
+  width: 4vw;
   max-width: 100%;
   height: auto;
 }
@@ -11537,8 +11675,8 @@ html {
         max-width: 50%;
     height: auto;
     */
-        width: 50%;
-        max-width: 50%;
+        width: 75%;
+        max-width: 75%;
     }
 .figure img.image-hover {
     position: absolute;
@@ -11554,7 +11692,12 @@ html {
     opacity: 1;
 }
 
-
+@media (max-width: 992px) {
+    .figure {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 .image6-fluid {
   position: relative;
@@ -11578,6 +11721,28 @@ html {
       max-width: 65%;
     }
 }
+
+.image8-fluid {
+  position: relative;
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+}
+
+@media (min-width: 1280px) {
+.image8-fluid {
+  width: 70%;
+  max-width: 70%;
+}
+}
+
+@media (max-width: 767px) {
+.image8-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+}
+
 
 .image2 {
   position: absolute;
@@ -11633,7 +11798,7 @@ video {
 }
 
 .masthead .masthead-avatar2 {
-  width: 100%;
+  width: 60%;
 }
 
 @media (max-width: 992px) {
@@ -11642,7 +11807,7 @@ video {
     }
 
     .masthead .masthead-avatar2 {
-        width: 75%;
+        width: 60%;
     }
 }
 /*
@@ -11738,4 +11903,23 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.carousel-custom1 {
+    margin-right: -1.6rem !important;
+    justify-content: flex-end !important;
+}
+
+@media (max-width: 992px) {
+.carousel-custom1 {
+    margin-right: 0rem !important;
+    justify-content: center !important;
+}
 }
