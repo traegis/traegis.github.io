@@ -11623,6 +11623,25 @@ html {
 }
 
 */
+
+.image-hover-fluid {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-hover-overlay {
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+
 .image1-fluid {
   position: relative;
   /*width: 80rem;*/
@@ -11673,15 +11692,13 @@ html {
     height: auto;
 }
 
-.figure {
-        position: relative;
-        /*width: 50%;
-        max-width: 50%;
-    height: auto;
-    */
-        width: 75%;
-        max-width: 75%;
-    }
+.figure 
+{
+    position: relative;
+    width: 75%;
+    max-width: 75%;
+}
+
 .figure img.image-hover {
     position: absolute;
     top: 0;
@@ -11693,6 +11710,11 @@ html {
     transition: opacity .2s;
 }
 .figure:hover img.image-hover {
+    opacity: 1;
+}
+
+
+.figure:hover .image-hover-overlay {
     opacity: 1;
 }
 
