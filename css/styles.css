@@ -11953,3 +11953,15 @@ video {
     justify-content: center !important;
 }
 }
+
+
+.itch-banner {
+    width: 552px;
+    height: 167px;
+}
+
+@media (max-width: 720px) {
+.itch-banner {
+    width: 400px;
+}
+}
