@@ -93,7 +93,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Rye', cursive; 
+  font-family: 'Anton', cursive; 
   /* font-family: "Unica One", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;*/
   /* font-family: "Rye", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; */
   /*font-family:  'Rye', cursive;*/
@@ -615,6 +615,13 @@ progress {
   vertical-align: middle;
 }
 
+.img-nav2 {
+  max-width: 10rem;
+  height: auto;
+  display: inline-block;
+vertical-align: middle;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -778,6 +785,13 @@ bottom: 0px;
   border-right-width: 0;
   border-left-width: 0;
   border-color: white;
+}
+
+.border4 {
+  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border-right-width: 0;
+  border-left-width: 0;
+  border-color: #a6a6a6;
 }
 
 .bottom-border3 {
@@ -3928,7 +3942,7 @@ textarea.form-control-lg {
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: #1e2125;
-  background-color: #e9ecef;
+  background-color: #28394a;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
@@ -5444,6 +5458,15 @@ textarea.form-control-lg {
 
 .btn-close-white {
   filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.hover-black:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.hover-black {
+  opacity: 0.75;
 }
 
 .toast {
@@ -7217,12 +7240,20 @@ textarea.form-control-lg {
   margin-top: 0 !important;
 }
 
+.mt-1-1 {
+  margin-top: 0.2rem !important;
+}
+
 .mt--1 {
     margin-top: -1rem !important;
 }
 
 .mt-1 {
   margin-top: 0.8vw !important;
+}
+
+.mt--1 {
+  margin-top: -0.8vw !important;
 }
 
 .vertical-middle {
@@ -7514,6 +7545,10 @@ textarea.form-control-lg {
 
 .pt-1 {
   padding-top: 0.25rem !important;
+}
+
+.pt--1 {
+  padding-top: -0.25rem !important;
 }
 
 .pt-2 {
@@ -7878,11 +7913,12 @@ textarea.form-control-lg {
 }
 
 .bg-static2 {
-  background-image: url("../assets/img/mapBackground.png");
+  /*background-image: url("../assets/img/backgroundTraegis.png");*/
+  background-color: #141619;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
  /* background-size: 100%; */
-background-size: cover;
+ background-image: url("../assets/img/title_OUTLANDIA2.png");
 }
 
 .bg-static3 {
@@ -11475,7 +11511,7 @@ html {
 }
 
 .btn-xl {
-  padding: 1rem 1.75rem;
+  padding: 1.5rem 2.75rem;
   font-size: 1.5vw;
 }
 
@@ -11572,6 +11608,30 @@ html {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
+}
+
+
+.absolute-center {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+@media(min-width: 992px) 
+{
+  /*
+  .absolute-center {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+*/
 }
 
 
@@ -11813,7 +11873,7 @@ video {
 
 .masthead {
   /*padding-top: calc(1rem + 74px);*/
-  padding-top: 3.2rem;
+  padding-top: 4rem;
   padding-bottom: 0rem;
 }
 .masthead .masthead-heading {
@@ -11834,6 +11894,10 @@ video {
 @media (max-width: 992px) {
     .masthead .masthead-avatar {
         width: 100%;
+    }
+
+    .masthead {
+      padding-top: 4rem !important;
     }
 
     .masthead .masthead-avatar2 {
