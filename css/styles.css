@@ -608,6 +608,13 @@ progress {
   height: auto;
 }
 
+.img-fluid-lg
+{
+  /*max-width: 150%;*/
+  width: 60vw;
+  height: 36vw;
+}
+
 .img-icon {
   width: 2rem;
   height: 2rem;
